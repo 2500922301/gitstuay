@@ -2,11 +2,18 @@ git add --all  存到暂存区。
 git status 查看文件情况
 git commit -m ''   提交  
 git log 查看日志
-git remote add xxx 网址  
-git push xxx master  提交  
-上传错误方法
+git remote add origin 网址  
+git push origin master  提交 
+
+github拉取到vscode上
+git remote -v
+git clone git@github.com:2500922301/gitstuay.git
+
+
+上传错误时修改方法
 ! [rejected]        master -> master (fetch first)
 	error: failed to push some refs to 'https://github.com/Guohao8/ZZHXX.git'
 解决方法
 先输入git pull --rebase origin master
 再git push -u origin master
+再git push origin master
