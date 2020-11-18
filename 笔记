@@ -4,3 +4,9 @@ git commit -m ''   提交
 git log 查看日志
 git remote add xxx 网址  
 git push xxx master  提交  
+上传错误方法
+! [rejected]        master -> master (fetch first)
+	error: failed to push some refs to 'https://github.com/Guohao8/ZZHXX.git'
+解决方法
+先输入git pull --rebase origin master
+再git push -u origin master
